@@ -28,20 +28,6 @@
         android:layout_height="match_parent"
         style="@style/SudContentFrame">
 
-        <ImageView
-            android:id="@+id/brand_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/sim"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:gravity="center"
-            android:paddingTop="@dimen/content_margin_left"
-            android:paddingRight="@dimen/content_margin_left"
-            android:paddingLeft="@dimen/content_margin_left"
-            android:paddingBottom="0dp"/>
-
         <FrameLayout
             android:id="@+id/page"
             android:layout_width="match_parent"
@@ -54,6 +40,33 @@
                 android:layout_height="match_parent">
 
             </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/simcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/content_margin_left"
+                android:paddingTop="@dimen/content_margin_left"
+                android:paddingRight="@dimen/content_margin_left"
+                android:paddingBottom="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sim" />
+
+        </LinearLayout>
         </FrameLayout>
 
         <org.lineageos.setupwizard.NavigationLayout
