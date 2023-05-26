@@ -28,6 +28,20 @@
         android:layout_height="match_parent"
         style="@style/SudContentFrame">
 
+        <ImageView
+            android:id="@+id/brand_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/sim"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:paddingTop="@dimen/content_margin_left"
+            android:paddingRight="@dimen/content_margin_left"
+            android:paddingLeft="@dimen/content_margin_left"
+            android:paddingBottom="0dp"/>
+
         <FrameLayout
             android:id="@+id/page"
             android:layout_width="match_parent"
