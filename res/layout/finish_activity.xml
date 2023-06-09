@@ -23,7 +23,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    app:insetForeground="@android:color/transparent">
+    app:insetForeground="@android:color/transparent"
+    android:background="@drawable/background2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,17 +59,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/brand_logo"
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
-            android:src="@drawable/welcome"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:gravity="center"
-            android:padding="@dimen/content_margin_left"/>
 
         <org.lineageos.setupwizard.NavigationLayout
             android:id="@+id/navigation_bar"
