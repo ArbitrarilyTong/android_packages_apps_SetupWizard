@@ -31,6 +31,34 @@
         android:orientation="vertical"
         style="@style/SudContentFrame">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/SudContentFrame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/welcome_content_container_padding_start"
+                android:paddingEnd="@dimen/welcome_content_container_padding_end"
+                android:paddingBottom="@dimen/welcome_content_container_padding_bottom">
+
+                <TextView
+                    android:id="@+id/welcome_title"
+                    style="@style/WelcomeTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hyphenationFrequency="none"
+                    android:paddingBottom="@dimen/welcome_content_container_padding_bottom" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/brand_logo"
             android:layout_width="match_parent"
